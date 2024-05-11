@@ -1,0 +1,70 @@
+/*============================== Configurations ==============================*/
+:root {
+    /*=============== COLORS ===============*/
+    --cod-gray-dark-color: hsl(0, 0%, 8%);
+    --mine-shaft-dark-color: hsl(0, 0%, 12%);
+    --mine-shaft-light-color: hsl(0, 0%, 20%);
+    --white-color: hsl(0, 0%, 100%);
+    --green-yellow-color: hsl(75, 94%, 57%);
+
+    /*=============== BACKGROUNDS ===============*/
+    --page-background: var(--cod-gray-dark-color);
+    --profile-wraper-background: var(--mine-shaft-dark-color);
+    --link-background: var(--mine-shaft-light-color);
+    --link-hover-background: var(--green-yellow-color);
+
+    /*=============== BORDERS ===============*/
+
+
+    /*=============== TEXT COLORS ===============*/
+    --address-text-color: var(--green-yellow-color);
+    --link-text-color: var(--white-color);
+    --link-hover-text-color: var(--cod-gray-dark-color);
+
+    /*=============== FONTS ===============*/
+    --defaul-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*============================== GENERIC ELEMENTS ==============================*/
+body {
+    background-color: var(--page-background);
+
+    min-height: 100vh;
+
+    font-family: var(--defaul-font);
+}
+
+p {
+    font-size: 14px;
+}
+
+/*============================== PAGE - TOP TO BOTTOM ==============================*/
+.profile-wraper {
+    background-color: var(--profile-wraper-background);
+
+    width: fit-content;
+}
+
+.profile {
+    max-width: 30%;
+
+    border-radius: 50%;
+}
+
+.address {
+    color: var(--address-text-color);
+}
+
+.link {
+    background-color: var(--link-background);
+
+    color: var(--link-text-color);
+
+    transition: all 0.5s;
+}
+
+    .link:hover {
+        background-color: var(--link-hover-background);
+
+        color: var(--link-hover-text-color);
+    }
